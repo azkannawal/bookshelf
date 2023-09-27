@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="name">Bookshelf App | Organize Your Booklist</h1>
+    </header>
+    <main>
+        <div class="input">
+            <form id="inputForm">
+              <h3>Add your book</h3>
+              <div class="bookIdentity">
+                <input id="bookTitle" type="text" placeholder="Title" required>
+                <input id="author" type="text" placeholder="Author" required>
+                <input id="year" type="number" placeholder="Year" required>
+                <label><input id="finished" type="checkbox">Finished</label>
+                <button id="submit" type="submit">Add</button>
+              </div>
+            </form>
+            <div class="searching">
+                <h3>Search book</h3>
+                <form id="searchBook">
+                <input id="searchTitle" placeholder="Title" type="text">
+                <button id="searchSubmit" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="shelf-container">
+            <div class="shelf-read">
+                <h3>Read</h3>
+                <div id="read" class="bookList">
+                </div>
+            </div>
+            <div class="shelf-toread">
+                <h3>To-read</h3>
+                <div id="toRead" class="bookList">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>©️2023 Bookshelf App</h3>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
